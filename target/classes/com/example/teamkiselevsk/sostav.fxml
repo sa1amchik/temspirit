@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="533.0" prefWidth="1018.0" style="-fx-background-color: black;" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.teamkiselevsk.Sostav">
+   <children>
+      <ImageView fitHeight="115.0" fitWidth="90.0" layoutX="2.0" layoutY="7.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@index.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="150.0" fitWidth="200.0" layoutX="123.0" layoutY="59.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@donk.jpeg" />
+         </image>
+      </ImageView>
+      <Label layoutX="168.0" layoutY="209.0" prefHeight="36.0" prefWidth="66.0" text="DONK" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="17.0" />
+         </font>
+      </Label>
+      <Label layoutX="129.0" layoutY="234.0" prefHeight="44.0" prefWidth="144.0" text="Данил Крышковец" textFill="WHITE">
+         <font>
+            <Font size="15.0" />
+         </font>
+      </Label>
+      <ImageView fitHeight="150.0" fitWidth="200.0" layoutX="448.0" layoutY="59.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@shiro.jpeg" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="150.0" fitWidth="200.0" layoutX="613.0" layoutY="227.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@magixx.jpeg" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="150.0" fitWidth="200.0" layoutX="280.0" layoutY="227.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@zontix.jpeg" />
+         </image>
+      </ImageView>
+      <Label layoutX="495.0" layoutY="209.0" prefHeight="36.0" prefWidth="66.0" text="SH1RO" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="17.0" />
+         </font>
+      </Label>
+      <Label layoutX="456.0" layoutY="234.0" prefHeight="44.0" prefWidth="144.0" text="Дмитрий Соколов" textFill="WHITE">
+         <font>
+            <Font size="15.0" />
+         </font>
+      </Label>
+      <Label layoutX="319.0" layoutY="377.0" prefHeight="36.0" prefWidth="73.0" text="ZONT1X" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="17.0" />
+         </font>
+      </Label>
+      <Label layoutX="284.0" layoutY="402.0" prefHeight="44.0" prefWidth="144.0" text="Мирослав Плахотя" textFill="WHITE">
+         <font>
+            <Font size="15.0" />
+         </font>
+      </Label>
+      <Label layoutX="652.0" layoutY="377.0" prefHeight="36.0" prefWidth="73.0" text="MAGIXX" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="17.0" />
+         </font>
+      </Label>
+      <Label layoutX="623.0" layoutY="402.0" prefHeight="44.0" prefWidth="131.0" text="Борис Воробьев" textFill="WHITE">
+         <font>
+            <Font size="15.0" />
+         </font>
+      </Label>
+      <ImageView fitHeight="150.0" fitWidth="144.0" layoutX="787.0" layoutY="59.0" pickOnBounds="true">
+         <image>
+            <Image url="@chopper.jpeg" />
+         </image>
+      </ImageView>
+      <Label layoutX="818.0" layoutY="209.0" prefHeight="36.0" prefWidth="83.0" text="CHOPPER" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="17.0" />
+         </font>
+      </Label>
+      <Label layoutX="794.0" layoutY="234.0" prefHeight="44.0" prefWidth="144.0" text="Леонид Вишняков" textFill="WHITE">
+         <font>
+            <Font size="15.0" />
+         </font>
+      </Label>
+      <Button fx:id="nazad" layoutX="25.0" layoutY="476.0" mnemonicParsing="false" onAction="#back" prefHeight="40.0" prefWidth="180.0" style="-fx-background-color: black; -fx-border-color: grey;" text="Назад" textFill="WHITE" />
+   </children>
+</AnchorPane>

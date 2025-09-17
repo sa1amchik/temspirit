@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane prefHeight="400.0" prefWidth="600.0" style="-fx-background-color: black;" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.teamkiselevsk.adminmenu">
+   <children>
+      <ImageView fitHeight="115.0" fitWidth="90.0" layoutX="2.0" layoutY="7.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@index.png" />
+         </image>
+      </ImageView>
+      <Button fx:id="pol" layoutX="198.0" layoutY="128.0" mnemonicParsing="false" onAction="#setPol" prefHeight="52.0" prefWidth="192.0" style="-fx-background-color: black; -fx-border-color: grey;" text="Пользователи" textFill="WHITE" />
+      <Button fx:id="match" layoutX="198.0" layoutY="207.0" mnemonicParsing="false" onAction="#setMatch" prefHeight="52.0" prefWidth="192.0" style="-fx-background-color: black; -fx-border-color: grey;" text="Расписание матчей" textFill="WHITE" />
+      <Button fx:id="nazad" layoutX="204.0" layoutY="330.0" mnemonicParsing="false" onAction="#back" prefHeight="40.0" prefWidth="180.0" style="-fx-background-color: black; -fx-border-color: gray;" text="Назад" textFill="WHITE" />
+   </children>
+</AnchorPane>

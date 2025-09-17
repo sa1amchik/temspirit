@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.DatePicker?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.VBox?>
+
+<VBox alignment="CENTER" prefHeight="631.0" prefWidth="1124.0" spacing="20.0" style="-fx-background-color: black;" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.teamkiselevsk.Raspmatch">
+    <padding>
+        <Insets bottom="20.0" left="20.0" right="20.0" top="20.0" />
+    </padding>
+    <AnchorPane prefHeight="591.0" prefWidth="982.0" style="-fx-background-color: black;" VBox.vgrow="ALWAYS">
+        <children>
+            <Button layoutX="24.0" layoutY="382.0" mnemonicParsing="false" onAction="#Add_users" prefHeight="40.0" prefWidth="190.0" style="-fx-background-color: black; -fx-border-color: grey;" text="Добавить" textFill="WHITE" />
+            <Button layoutX="24.0" layoutY="428.0" mnemonicParsing="false" onAction="#Edit" prefHeight="40.0" prefWidth="190.0" style="-fx-background-color: black; -fx-border-color: grey;" text="Изменить" textFill="WHITE" />
+            <Button layoutX="24.0" layoutY="474.0" mnemonicParsing="false" onAction="#Delete" prefHeight="40.0" prefWidth="190.0" style="-fx-background-color: black; -fx-border-color: grey;" text="Удалить" textFill="WHITE" />
+            <Button fx:id="Vihod_id" layoutX="7.0" layoutY="545.0" mnemonicParsing="false" onAction="#Vihod" prefHeight="40.0" prefWidth="180.0" style="-fx-background-color: black; -fx-border-color: grey;" text="Назад" textFill="WHITE" />
+            <TextField fx:id="txt_tip" layoutX="124.0" layoutY="191.0" prefHeight="30.0" prefWidth="180.0" promptText="Счёт" style="-fx-background-color: black; -fx-border-color: grey;" />
+            <TextField fx:id="txt_mail" layoutX="124.0" layoutY="100.0" prefHeight="30.0" prefWidth="180.0" promptText="Противник" style="-fx-background-color: black; -fx-border-color: grey;" />
+            <TableView fx:id="table_users5" layoutX="354.0" layoutY="83.0" onMouseClicked="#getSelected" prefHeight="474.0" prefWidth="597.0">
+                <columns>
+               <TableColumn fx:id="id" prefWidth="62.0" text="ID" />
+               <TableColumn fx:id="toornir" prefWidth="132.0" text="Турнир" />
+                    <TableColumn fx:id="protivnik" prefWidth="139.0" text="Противник" />
+                    <TableColumn fx:id="data" prefWidth="132.0" text="Дата" />
+               <TableColumn fx:id="schet" prefWidth="131.0" text="Счёт" />
+                </columns>
+            </TableView>
+            <TextField fx:id="filterField" layoutX="354.0" layoutY="38.0" onAction="#search_user" prefHeight="30.0" prefWidth="407.0" promptText="Поиск" style="-fx-background-color: black; -fx-border-color: grey;" />
+
+            <Button layoutX="25.0" layoutY="336.0" mnemonicParsing="false" onAction="#UpdateTable" prefHeight="40.0" prefWidth="190.0" style="-fx-background-color: black; -fx-border-color: grey;" text="Обновить" textFill="WHITE" />
+         <TextField fx:id="txt_login" layoutX="124.0" layoutY="53.0" prefHeight="30.0" prefWidth="180.0" promptText="Турнир" style="-fx-background-color: black; -fx-border-color: grey;" />
+         <TextField fx:id="txt_id" layoutX="124.0" layoutY="8.0" prefHeight="30.0" prefWidth="180.0" promptText="ID" style="-fx-background-color: black; -fx-border-color: grey;" />
+         <ImageView fitHeight="115.0" fitWidth="90.0" layoutX="-15.0" layoutY="-13.0" pickOnBounds="true" preserveRatio="true">
+            <image>
+               <Image url="@index.png" />
+            </image>
+         </ImageView>
+         <Button fx:id="save" layoutX="962.0" layoutY="221.0" mnemonicParsing="false" onAction="#Save" prefHeight="40.0" prefWidth="190.0" style="-fx-background-color: black; -fx-border-color: grey;" text="Сохранить" textFill="WHITE" />
+         <Button fx:id="print" layoutX="962.0" layoutY="268.0" mnemonicParsing="false" onAction="#Print" prefHeight="40.0" prefWidth="190.0" style="-fx-background-color: black; -fx-border-color: grey;" text="Печать" textFill="WHITE" />
+         <Button fx:id="export" layoutX="962.0" layoutY="316.0" mnemonicParsing="false" onAction="#Export" prefHeight="40.0" prefWidth="190.0" style="-fx-background-color: black; -fx-border-color: grey;" text="Экспорт" textFill="WHITE" />
+         <DatePicker fx:id="txt_password" layoutX="125.0" layoutY="144.0" prefHeight="30.0" prefWidth="180.0" />
+        </children>
+    </AnchorPane>
+</VBox>
